@@ -32,7 +32,7 @@ modules:
         install:
           - io.github.kolunmi.Bazaar
           - com.github.tchx84.Flatseal
-          - com.github.th_ch.youtube_music
+          - app.ytmdesktop.ytmdesktop
           - org.equicord.equibop
           - org.telegram.desktop
 
