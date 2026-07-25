@@ -27,7 +27,6 @@ modules:
       - chezmoi
       - neovim
       - fastfetch
-      packages:
     remove:
       packages:
         - nvidia-driver
