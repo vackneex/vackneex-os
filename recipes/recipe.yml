@@ -17,22 +17,29 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # - type: dnf
-  #   repos:
-  #     copr:
-  #   install:
-  #     packages:
-  #   remove:
-  #     packages:
-
+  - type: dnf
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/rpmfusion-nonfree-nvidia/ublue-os-akmods-rpmfusion-nonfree-nvidia.repo
+    install:
+      - nvidia-driver-580.173.02
+      - nvidia-driver-cuda-580.173.02
+      - kmod-nvidia-580.173.02
+      - chezmoi
+      - neovim
+      - fastfetch
+      packages:
+    remove:
+      packages:
+        - nvidia-driver
+        - kmod-nvidia
+  
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: user
+        scope: system
         install:
           - io.github.kolunmi.Bazaar
           - com.github.tchx84.Flatseal
-          - app.ytmdesktop.ytmdesktop
           - org.equicord.equibop
           - org.telegram.desktop
 
