@@ -30,10 +30,10 @@ modules:
         - chezmoi
         - neovim
         - fastfetch
-    remove:
-      packages:
-        - nvidia-driver
-        - kmod-nvidia
+    # remove:
+    #   packages:
+    #     - nvidia-driver
+    #     - kmod-nvidia
   
   - type: default-flatpaks
     configurations:
