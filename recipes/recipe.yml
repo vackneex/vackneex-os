@@ -19,14 +19,17 @@ modules:
 
   - type: dnf
     repos:
-      - https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/rpmfusion-nonfree-nvidia/ublue-os-akmods-rpmfusion-nonfree-nvidia.repo
+      nonfree: rpmfusion
+      files:
+        - https://copr.fedorainfracloud.org/coprs/ublue-os/akmods/repo/rpmfusion-nonfree-nvidia/ublue-os-akmods-rpmfusion-nonfree-nvidia.repo
     install:
-      - nvidia-driver-580.173.02
-      - nvidia-driver-cuda-580.173.02
-      - kmod-nvidia-580.173.02
-      - chezmoi
-      - neovim
-      - fastfetch
+      packages:
+        - nvidia-driver-580.173.02
+        - nvidia-driver-cuda-580.173.02
+        - kmod-nvidia-580.173.02
+        - chezmoi
+        - neovim
+        - fastfetch
     remove:
       packages:
         - nvidia-driver
