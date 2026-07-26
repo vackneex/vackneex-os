@@ -20,11 +20,16 @@ modules:
   - type: dnf
     repos:
       nonfree: rpmfusion
+      copr:
+        - imput/helium
+        - scottames/ghostty
     install:
       packages:
         - chezmoi
         - neovim
         - fastfetch
+        - helium-bin
+        - ghostty
     # remove:
     #   packages:
     #     - nvidia-driver
