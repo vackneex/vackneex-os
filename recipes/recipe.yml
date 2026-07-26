@@ -22,9 +22,6 @@ modules:
       nonfree: rpmfusion
     install:
       packages:
-        - nvidia-driver-580xx
-        - nvidia-driver-cuda-580xx
-        - kmod-nvidia-580xx
         - chezmoi
         - neovim
         - fastfetch
