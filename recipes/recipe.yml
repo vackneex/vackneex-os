@@ -32,7 +32,7 @@ modules:
         - helium-bin
         - ghostty
         - ntfs2btrfs
-        - prime-run
+        # - prime-run
     # remove:
     #   packages:
   
