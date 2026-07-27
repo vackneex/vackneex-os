@@ -29,7 +29,8 @@ modules:
         - fastfetch
         - helium-bin
         - ghostty
-        - nvidia-offload
+        - ntfs2btrfs
+        # - nvidia-offload
     # remove:
     #   packages:
   
