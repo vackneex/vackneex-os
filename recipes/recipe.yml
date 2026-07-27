@@ -29,14 +29,13 @@ modules:
         - fastfetch
         - helium-bin
         - ghostty
+        - nvidia-offload
     # remove:
     #   packages:
-    #     - nvidia-driver
-    #     - kmod-nvidia
   
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: true
         scope: system
         install:
           - com.github.tchx84.Flatseal
