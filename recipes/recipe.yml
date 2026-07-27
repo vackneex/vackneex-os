@@ -30,7 +30,7 @@ modules:
         - helium-bin
         - ghostty
         - ntfs2btrfs
-        # - nvidia-offload
+        - prime-run
     # remove:
     #   packages:
   
