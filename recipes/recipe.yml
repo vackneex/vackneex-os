@@ -22,6 +22,8 @@ modules:
       copr:
         - imput/helium
         - scottames/ghostty
+      files:
+        - https://terra.fyralabs.com/terra.repo
     install:
       packages:
         - chezmoi
