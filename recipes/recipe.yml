@@ -23,6 +23,7 @@ modules:
         - imput/helium
         - scottames/ghostty
         - scujas/plasma-applet-appgrid
+        - lionheartp/Hyprland
       # files:
       #   # - https://terra.fyralabs.com/terra.repo
     install:
@@ -34,6 +35,7 @@ modules:
         - ghostty
         - ntfs2btrfs
         - plasma-applet-appgrid
+        - hyprland
     # remove:
     #   packages:
   
