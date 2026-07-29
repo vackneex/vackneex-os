@@ -36,6 +36,18 @@ modules:
         - ntfs2btrfs
         - plasma-applet-appgrid
         - hyprland
+        - waybar
+        - rofi-wayland
+        - swaync
+        - blueman
+        - network-manager-applet
+        - helvum
+        - udiskie
+        - kitty
+        - grim
+        - slurp
+        - wl-clipboard
+        - nwg-displays
     # remove:
     #   packages:
   
